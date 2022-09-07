@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imersão Dev Alura - Aula 01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">
+        Calculadora de média</h1>
+        <p class="page-subtitle">
+        Descubra qual a sua média de nota de todas as provas!
+        </p>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="logo da imersão dev">
+
+        <!-- Parte do desafio abaixo -->
+
+        <div class="card">
+                <h2 class="card-heading">
+                    <small>Vamos descobrir</small>
+                </h2>
+            
+            <form class="card-form">
+                <div class="input">
+                    <input type="text" class="input-field" id="textNome"/>
+                    <label class="input-label">Nome</label>
+                </div>
+                <div class="input">
+                    <input type="number" class="input-field" id="notaPrimeiro"/>
+                    <label class="input-label">Nota Primeiro Bimestre</label>
+                </div>
+                <div class="input">
+                    <input type="number" class="input-field" id="notaSegundo"/>
+                    <label class="input-label">Nota Segundo Bimestre</label>
+                </div>
+                <div class="input">
+                    <input type="number" class="input-field" id="notaTerceiro"/>
+                    <label class="input-label">Nota Terceiro Bimestre</label>
+                </div>
+                <div class="input">
+                    <input type="number" class="input-field" id="notaQuarto"/>
+                    <label class="input-label">Nota Quarto Bimestre</label>
+                </div>
+                <div class="action">
+                    <button type="button" class="action-button" onclick="calcular()">Calcular</button>
+                    <h2 id="resultadoMedia"></h2>
+                </div>
+            </form>
+            
+            
+
+        <!-- Parte do desafio acima -->
+        
+      </div>
+      <a href="https://alura.com.br/" target="_blank">
+      <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+      </a>
+      
+    
+</body>
+<script src="script.js"></script>
+</html>
