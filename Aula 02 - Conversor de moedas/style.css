@@ -1,0 +1,146 @@
+/* Design inspirado no tutorial de CodingNepal: https://www.codingnepalweb.com/currency-converter-app-in-html-javascript/ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #675afe;
+}
+.wrapper {
+  width: 370px;
+  padding: 30px;
+  margin-top: 125px;
+  border-radius: 7px;
+  background: #fff;
+  opacity: 90%;
+}
+.wrapper header {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+.wrapper form {
+  margin: 40px 0 20px 0;
+}
+form :where(input, select, button) {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+form p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+form input {
+  height: 50px;
+  font-size: 17px;
+  padding: 0 15px;
+  border: 1px solid #999;
+}
+form input:focus {
+  padding: 0 14px;
+  border: 2px solid #675afe;
+}
+form .drop-list {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.drop-list .select-box {
+  display: flex;
+  height: 45px;
+  width: 115px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #999;
+}
+.drop-list .select-box:hover {
+  padding: 0 14px;
+  border: 2px solid #675afe;
+}
+
+.select-box select {
+  width: auto;
+  font-size: 16px;
+  margin: 0 -5px 0 5px;
+}
+
+/* Scroll bar */
+.select-box select::-webkit-scrollbar {
+  width: 10px;
+}
+.select-box select::-webkit-scrollbar-track {
+  background: #fff;
+}
+.select-box select::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+  border-right: 2px solid #fff;
+}
+
+.select-box img {
+  max-width: 25px;
+}
+
+.drop-list .icon {
+  cursor: pointer;
+  font-size: 22px;
+  margin-top: 30px;
+}
+form .exchange-rate {
+  font-size: 17px;
+  margin: 20px 0 30px;
+}
+form button {
+  height: 52px;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  background: #675afe;
+}
+form button:hover {
+  font-weight: 600;
+  text-shadow: 0 0 4px #888;
+  background: #fada06;
+}
+
+/* ALURA */
+
+.page-logo {
+  position: absolute;
+  width: 300px;
+  top: 40px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* EXTRA-IMAGENS */
+
+.astro {
+  width: 40%;
+  position: fixed;
+  bottom: -50px;
+  right: -70px;
+  z-index: -2;
+}
+
+/*.astro-green {
+    position: fixed;
+    top: -50px;
+    left: -70px;
+    z-index: -2;
+  } */
